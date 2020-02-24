@@ -1,0 +1,20 @@
+{
+  "name": "typescipt-express-boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "local": "ts-node ./src/server.ts",
+    "dev": "npm run build && NODE_ENV=development node build/server.js",
+    "stage": "npm run build && NODE_ENV=staging node build/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2"
+  }
+}
